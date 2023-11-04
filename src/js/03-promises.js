@@ -34,6 +34,7 @@ function createPromise(position, delay) {
     })
     .catch(({ position, delay }) => {
       Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
+      console.log("")
     });
 }
 
