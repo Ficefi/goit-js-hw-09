@@ -1,4 +1,4 @@
-import Notiflix from 'notiflix';
+import Notiflix from 'https://cdn.jsdelivr.net/npm/notiflix@3.2.6/+esm'
 
 const form = document.querySelector(".form");
 
@@ -34,7 +34,6 @@ function createPromise(position, delay) {
     })
     .catch(({ position, delay }) => {
       Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
-      console.log("")
     });
 }
 
