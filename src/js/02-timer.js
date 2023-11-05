@@ -1,4 +1,4 @@
-import flatpickr from 'https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/+esm';
+import flatpickr from 'flatpickr';
 import Notiflix from 'https://cdn.jsdelivr.net/npm/notiflix@3.2.6/+esm';
 
 const startBtn = document.querySelector('[data-start]');
