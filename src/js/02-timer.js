@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
-import Notiflix from 'https://cdn.jsdelivr.net/npm/notiflix@3.2.6/+esm';
+import 'flatpickr/dist/flatpickr.min.css';
+import Notiflix from 'notiflix';
 
 const startBtn = document.querySelector('[data-start]');
 const times = {
@@ -53,6 +54,7 @@ const options = {
 
     startBtn.addEventListener('click', () => {
       let time = selectedDates[0] - date;
+      flatpickr.disabled = true;
       const interval = setInterval(() => {
         time -= 1000;
         let result = convertMs(time);

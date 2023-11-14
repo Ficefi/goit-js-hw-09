@@ -1,6 +1,6 @@
-import Notiflix from 'https://cdn.jsdelivr.net/npm/notiflix@3.2.6/+esm'
+import Notiflix from 'notiflix';
 
-const form = document.querySelector(".form");
+const form = document.querySelector('.form');
 
 function submitForm(event) {
   event.preventDefault();
@@ -9,7 +9,7 @@ function submitForm(event) {
   const inputStep = event.currentTarget.step.valueAsNumber;
   const inputAmount = event.currentTarget.amount.valueAsNumber;
 
-  for (let position = 1; position <= inputAmount; position++){
+  for (let position = 1; position <= inputAmount; position++) {
     createPromise(position, inputDelay);
     inputDelay += inputStep;
   }
